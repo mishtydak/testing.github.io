@@ -1,1 +1,82 @@
-
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="team.css">
+    <title>DAA COURSE PROJECT</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                <span>DAA</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="intro.html">Course Project Introduction</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="ps.html">Problem Statement</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="bc.html">Business Cases</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="td.html">Team details</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="intro.html">Course Project Introduction</a>
+                <a href="ps.html">Problem Statement</a>
+                <a href="bc.html">Business Cases</a>
+                <a href="td.html">Team details</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section class="team-section">
+        <h1 class="team-heading" data-aos="fade-down" data-aos-duration="1500">Meet Our Team</h1>
+        <div class="team-container">
+            <div class="team-member" data-aos="zoom-in" data-aos-duration="1500">
+                <div class="member-image">
+                    <img src="https://via.placeholder.com/150" alt="Member 1">
+                </div>
+                <h3>DIYA HABIB</h3>
+                <p>Role: Project Manager</p>
+                <p>Email: member1@example.com</p>
+            </div>
+            <div class="team-member" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="100">
+                <div class="member-image">
+                    <img src="https://via.placeholder.com/150" alt="Member 2">
+                </div>
+                <h3>ANANYA K</h3>
+                <p>Role: Developer</p>
+                <p>Email: member2@example.com</p>
+            </div>
+            <div class="team-member" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">
+                <div class="member-image">
+                    <img src="https://via.placeholder.com/150" alt="Member 3">
+                </div>
+                <h3>MISHTY DAK</h3>
+                <p>Role: Designer</p>
+                <p>Email: member3@example.com</p>
+            </div>
+            <div class="team-member" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300">
+                <div class="member-image">
+                    <img src="https://via.placeholder.com/150" alt="Member 4">
+                </div>
+                <h3>BHAGYASHI JOGIN</h3>
+                <p>Role: Tester</p>
+                <p>Email: member4@example.com</p>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset: 0});
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
