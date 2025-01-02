@@ -13,9 +13,24 @@
             height: auto;
             overflow: auto; /* Enables both horizontal and vertical scroll */
         }
-        table { width: auto ; border-collapse: collapse; } 
-        th, td { border: 2px solid blue; padding: 10px; text-align: left; color: white; } 
-        th { background-color: black; } td { background-color: black; }
+        table {
+            width: 80%; /* Adjust the width to give equal space on left and right */
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+        } 
+        th, td {
+            border: 2px solid blue;
+            padding: 10px;
+            text-align: left;
+            color: white;
+        } 
+        th {
+            background-color: black;
+        } 
+        td {
+            background-color: black;
+        }
     </style>
 </head>
 <body>
@@ -41,7 +56,7 @@
                     <a href="ps.html">Problem Statement</a>
                     <a href="bc.html">Business Cases</a>
                     <a href="td.html">Team details</a>
-                      <br><br> 
+                    <br><br> 
                     <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
                 </div>
             </div>
@@ -49,7 +64,6 @@
         <section>
             <div class="main-container">
                 <div class="content">
-                   
                     <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700"><span>BUSINESS CASES</span></h1>
                     <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">
                         1. Listing of all preferences of users: This case involves creating a system that can collect and display user preferences, such as favorite destinations,
@@ -68,68 +82,64 @@
                 </div>
             </div>
         </section>
-    <table>
-        <tr>
-            <th>sno</th>
-            <th>BUSINESS CASE IDENTIFICATION</th>
-            <th>DESCRIPTION</th>
-            <th>OWNER</th>
-            <th>PROBABLE TOOLS</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Listing of all preferences of users</td>
-            <td>Display and insertion of preferences</td>
-            <td>MISHTY</td>
-            <td>Linked list</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Sorting by preference</td>
-            <td>Listing according to activities <br>chosen</td>
-            <td>MISHTY</td>
-            <td>Bubble sort</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Quick visits</td>
-            <td>Places according proximity</td>
-            <td>BHAGYASHRI</td>
-            <td>Dijkstra's algorithm</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Listing all the eco travelling options</td>
-            <td>List transport options sorted<br> (e.g., walking, biking, buses)</td>
-            <td>DIYA</td>
-            <td>Insertion sort</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>Listing the timings (arrival/ departure)</td>
-            <td>Sort transport timings for arrival and departure,<br> e.g., earliest to latest.</td>
-            <td>BHAGYASHRI/ MISHTY</td>
-            <td>Merge Sort</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>Shop local</td>
-            <td>Sort shops alphabetically or<br> by category to promote culture</td>
-            <td>ANANYA</td>
-            <td>Quick sort, array of shop details</td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>Emergence help</td>
-            <td>List of emergency services <br>(hospitals, police stations)</td>
-            <td>DIYA</td>
-            <td>Prim's /Kruskal’s algorithm</td>
-        </tr>
-    </table>
-
-
-
-        
+        <table>
+            <tr>
+                <th>sno</th>
+                <th>BUSINESS CASE IDENTIFICATION</th>
+                <th>DESCRIPTION</th>
+                <th>OWNER</th>
+                <th>PROBABLE TOOLS</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Listing of all preferences of users</td>
+                <td>Display and insertion of preferences</td>
+                <td>MISHTY</td>
+                <td>Linked list</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sorting by preference</td>
+                <td>Listing according to activities <br>chosen</td>
+                <td>MISHTY</td>
+                <td>Bubble sort</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Quick visits</td>
+                <td>Places according proximity</td>
+                <td>BHAGYASHRI</td>
+                <td>Dijkstra's algorithm</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Listing all the eco travelling options</td>
+                <td>List transport options sorted<br> (e.g., walking, biking, buses)</td>
+                <td>DIYA</td>
+                <td>Insertion sort</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Listing the timings (arrival/ departure)</td>
+                <td>Sort transport timings for arrival and departure,<br> e.g., earliest to latest.</td>
+                <td>BHAGYASHRI</td>
+                <td>Merge Sort</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Shop local</td>
+                <td>Sort shops alphabetically or<br> by category to promote culture</td>
+                <td>ANANYA</td>
+                <td>Quick sort, array of shop details</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Emergence help</td>
+                <td>List of emergency services <br>(hospitals, police stations)</td>
+                <td>DIYA</td>
+                <td>Prim's /Kruskal’s algorithm</td>
+            </tr>
+        </table>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
             AOS.init({offset:0});
