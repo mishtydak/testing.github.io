@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    .scrollable {
+      width: 300px;
+      height: 200px;
+      overflow: auto; /* Enables both horizontal and vertical scroll */
+      border: 1px solid #ccc;
+    }
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -11,6 +17,7 @@
 <body>
     <nav>
         <div class="nav-container">
+            <div class="scrollable">
             <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
                 <span>DAA</span>
             </div>
@@ -37,7 +44,7 @@
     <section>
         <div class="main-container">
             <div class="content">
-                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700"><span>TEAM DETAILSSSS</span></h1>
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700"><span>TEAM DETAILSSSSll</span></h1>
                     <section class="team-section">
         <h1 class="team-heading" data-aos="fade-down" data-aos-duration="1500">Meet Our Team</h1>
         <div class="team-container">
@@ -85,5 +92,6 @@
       AOS.init({offset:0});
     </script>
     <script src="script.js"></script>
+</div>
 </body>
 </html>
