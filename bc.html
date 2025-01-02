@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     .scrollable {
+      width: auto;
+      height: auto;
+      overflow: auto; /* Enables both horizontal and vertical scroll */
+    }
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -9,6 +14,7 @@
     <title>DAA COURSE PROJECT</title>
 </head>
 <body>
+    <div class="scrollable">
     <nav>
         <div class="nav-container">
             <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
@@ -37,7 +43,7 @@
     <section>
         <div class="main-container">
             <div class="content">
-                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700"><span>BUSINESS CASES</span></h1>
+              <br><br>  <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700"><span>BUSINESS CASES</span></h1>
                 <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">
 1. Listing of all preferences of users: This case involves creating a system that can collect and display user preferences, such as favorite destinations,
 activities, or types of accommodations. The system should be able to insert new preferences and update existing ones.<br><br>
@@ -60,5 +66,6 @@ to help users in case of an emergency.<br>
       AOS.init({offset:0});
     </script>
     <script src="script.js"></script>
+    </div>
 </body>
 </html>
