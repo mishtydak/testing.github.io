@@ -63,3 +63,59 @@ p {
     font-size: 0.9rem;
     color: #555;
 }
+/* General Background Styling */
+body {
+    background-color: #000; /* Black background for the entire page */
+    color: #fff; /* White text for contrast */
+}
+
+/* Button Styling */
+a, .link, .hamburg, .cancel {
+    background-color: #000; /* Black background for links and buttons */
+    color: #fff; /* White text or icon color */
+    padding: 10px 15px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    display: inline-block;
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+a:hover, .link:hover, .hamburg:hover, .cancel:hover {
+    background-color: #444; /* Dark gray on hover */
+    color: #fff;
+}
+
+/* Team Member Section Styling */
+.team-container .team-member {
+    background-color: #111; /* Darker black-gray for cards */
+    color: #fff;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6); /* Subtle shadow */
+}
+
+.team-container .team-member:hover {
+    background-color: #222; /* Slightly lighter black on hover */
+}
+
+/* Navigation Bar Background */
+.nav-container, .dropdown {
+    background-color: #000; /* Black navigation bar */
+    color: #fff;
+}
+
+.dropdown a, .links .link a {
+    color: #fff; /* White text for navigation links */
+}
+
+.dropdown a:hover, .links .link a:hover {
+    background-color: #444; /* Gray background for hovered links */
+    color: #fff;
+}
+
+/* Adjusting Section Headers */
+.team-heading, h1, p {
+    color: #fff; /* White text for headings and paragraphs */
+}
