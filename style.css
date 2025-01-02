@@ -239,8 +239,8 @@ section{
     }
 }
 .scrollable {
-    width: 3000px; 
-    height: 1500px; 
+    width: 3000000px; 
+    height: 150000px; 
     overflow: auto;
     border: 1px solid black; 
     padding: 10px; }
