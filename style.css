@@ -238,3 +238,6 @@ section{
         margin-top: 15px;
     }
 }
+.scrollable-table {
+    overflow-x: auto;
+}
