@@ -13,6 +13,9 @@
             height: auto;
             overflow: auto; /* Enables both horizontal and vertical scroll */
         }
+        table { width: 100%; border-collapse: collapse; } 
+        th, td { border: 2px solid blue; padding: 10px; text-align: left; color: white; } 
+        th { background-color: #3333cc; } td { background-color: #4d4dff; }
     </style>
 </head>
 <body>
@@ -64,6 +67,68 @@
                 </div>
             </div>
         </section>
+    <table>
+        <tr>
+            <th>sno</th>
+            <th>BUSINESS CASE IDENTIFICATION</th>
+            <th>DESCRIPTION</th>
+            <th>OWNER</th>
+            <th>PROBABLE TOOLS</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Listing of all preferences of users</td>
+            <td>Display and insertion of preferences</td>
+            <td>MISHTY</td>
+            <td>Linked list</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Sorting by preference</td>
+            <td>Listing according to activities chosen</td>
+            <td>MISHTY</td>
+            <td>Bubble sort</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Quick visits</td>
+            <td>Places according proximity</td>
+            <td>BHAGYASHRI</td>
+            <td>Dijkstra's algorithm</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Listing all the eco travelling options</td>
+            <td>List transport options sorted (e.g., walking, biking, buses)</td>
+            <td>DIYA</td>
+            <td>Insertion sort</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Listing the timings (arrival/ departure)</td>
+            <td>Sort transport timings for arrival and departure, e.g., earliest to latest.</td>
+            <td>BHAGYASHRI/ MISHTY</td>
+            <td>Merge Sort</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Shop local</td>
+            <td>Sort shops alphabetically or by category to promote culture</td>
+            <td>ANANYA</td>
+            <td>Quick sort, array of shop details</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Emergence help</td>
+            <td>List of emergency services (hospitals, police stations)</td>
+            <td>DIYA</td>
+            <td>Prim's /Kruskal’s algorithm</td>
+        </tr>
+    </table>
+
+
+
+        
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
             AOS.init({offset:0});
