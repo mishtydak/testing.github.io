@@ -1,2 +1,2 @@
 # testing.github.io
-[introduction](./waste.html)
+[introduction](./WASTE.html)
