@@ -5,135 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="style.css">
-    <title>DAA COURSE PROJECT</title>
-    <style>
-        .scrollable {
-            height: auto; /* Adjust height as needed */
-            width: auto;
-            overflow: auto; /* Enables both horizontal and vertical scroll */
-        }
-        .main-container {
-            display: flex;
-            justify-content: center; /* Centers the content horizontally */
-            /* Adds some padding */
-        }
-        .content {
-            width: 80%; /* Adjusts the width of the content */
-        }
-    </style>
+    <link rel="stylesheet" href="team.css">
+    <title>Team Details</title>
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
-                <span>DAA</span>
+    <section class="team-section">
+        <h1 class="team-heading" data-aos="fade-down" data-aos-duration="1500">Meet Our Team</h1>
+        <div class="team-container">
+            <div class="team-member" data-aos="zoom-in" data-aos-duration="1500">
+                <div class="member-image">
+                    <img src="https://via.placeholder.com/150" alt="Member 1">
+                </div>
+                <h3>Member 1</h3>
+                <p>Role: Project Manager</p>
+                <p>Email: member1@example.com</p>
             </div>
-            <div class="links">
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="intro.html">Course Project Introduction</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="ps.html">Problem Statement</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="bc.html">Business Cases</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="td.html">Team details</a></div>
+            <div class="team-member" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="100">
+                <div class="member-image">
+                    <img src="https://via.placeholder.com/150" alt="Member 2">
+                </div>
+                <h3>Member 2</h3>
+                <p>Role: Developer</p>
+                <p>Email: member2@example.com</p>
             </div>
-            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
-        </div>
-        <div class="dropdown">
-            <div class="links">
-                <a href="index.html">Home</a>
-                <a href="intro.html">Course Project Introduction</a>
-                <a href="ps.html">Problem Statement</a>
-                <a href="bc.html">Business Cases</a>
-                <a href="td.html">Team details</a>
-                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            <div class="team-member" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">
+                <div class="member-image">
+                    <img src="https://via.placeholder.com/150" alt="Member 3">
+                </div>
+                <h3>Member 3</h3>
+                <p>Role: Designer</p>
+                <p>Email: member3@example.com</p>
             </div>
-        </div>
-    </nav>
-    <section>
-        <div class="main-container">
-            <div class="content">
-                <div class="scrollable">
-                    <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700"><span>BUSINESS CASES</span></h1>
-<p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">
-1. Listing of all preferences of users: This case involves creating a system that can collect and display user preferences, such as favorite destinations,
-activities, or types of accommodations. The system should be able to insert new preferences and update existing ones.<br><br>
-2. Sorting by preference: This case builds on the previous one, where the system sorts user preferences based on their chosen activities. 
-For example, if a user prefers hiking, the system should list hiking-related activities first.<br><br>
-3. Quick visits: In this case, the system recommends places to visit based on their proximity to the user's current location.<br><br> 
-4. Listing all the eco-travelling options: This case involves creating a system that lists eco-friendly transportation options,
-such as walking, biking, or taking public transport. <br><br>
-5. Listing the timings (arrival/departure): Here, the system sorts transportation timings for arrival and departure, ensuring that users
-can plan their trips efficiently.<br><br>
-6. Shop local: This case promotes local culture by sorting shops alphabetically or by category.<br>
-7. Emergency help: In this case, the system provides a list of emergency services, such as hospitals and police stations, 
-to help users in case of an emergency.<br><br><br>
-</p>
-<table>
-<tr>
-<th>sno</th>
-<th>BUSINESS CASE IDENTIFICATION</th>
-<th>DESCRIPTION</th>
-<th>OWNER</th>
-<th>PROBABLE TOOLS</th>
-</tr>
-<tr>
-<td>1</td>
-<td>Listing of all preferences of users</td>
-<td>Display and insertion of preferences</td>
-<td>MISHTY</td>
-<td>Linked list</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Sorting by preference</td>
-<td>Listing according to activities chosen</td>
-<td>MISHTY</td>
-<td>Bubble sort</td>
-</tr>
-<tr>
-<td>3</td>
-<td>Quick visits</td>
-<td>Places according proximity</td>
-<td>BHAGYASHRI</td>
-<td>Dijkstra's algorithm</td>
-</tr>
-<tr>
-<td>4</td>
-<td>Listing all the eco travelling options</td>
-<td>List transport options sorted <br>eg:walking,biking,buses</td>
-<td>DIYA</td>
-<td>Insertion sort</td>
-</tr>
-<tr>
-<td>5</td>
-<td>Listing the timings (arrival/ departure)</td>
-<td>Sort transport timings for arrival and departure, <br>e.g., earliest to latest.</td>
-<td>BHAGYASHRI </td>
-<td>Merge Sort</td>
-</tr>
-<tr>
-<td>6</td>
-<td>Shop local</td>
-<td>Sort shops alphabetically or by category to promote culture</td>
-<td>ANANYA</td>
-<td>Quick sort,array of shop details</td>
-</tr>
-<tr>
-<td>7</td>
-<td>Emergency help</td>
-<td>List of emergency services(hospitals, police stations)</td>
-<td>DIYA</td>
-<td>Prim's /Kruskal’s algorithm</td>
-</tr>
-</table>
-</div>
+            <div class="team-member" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300">
+                <div class="member-image">
+                    <img src="https://via.placeholder.com/150" alt="Member 4">
+                </div>
+                <h3>Member 4</h3>
+                <p>Role: Tester</p>
+                <p>Email: member4@example.com</p>
             </div>
         </div>
     </section>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init({offset:0});
+        AOS.init({offset: 0});
     </script>
-    <script src="script.js"></script>
 </body>
 </html>
